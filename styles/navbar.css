@@ -5,10 +5,12 @@
   box-sizing: border-box;
 }
 
-/*   Selve baggrunds farve */
+/*   Selve baggrunds farve & skrifttype (makes navbar responsive) */
 body {
   font-family: Montserrat, sans-serif;
   background: #f0f7f8;
+  width:auto;
+  height:auto;
 }
 
 /*   Box around links */
@@ -22,7 +24,7 @@ body {
   align-items: center;
 }
 
-/*   Fix navbar Links, så de ikke ligger i en klump */
+/*  Fikser så der ikke er nogle style på linksne */
 .nav-item {
   list-style: none;
 }
@@ -31,7 +33,6 @@ body {
 .nav-item a {
   text-decoration: none;
   color: black;
-  transition: all 200ms ease-in;
   margin-right: 2rem;
   font-size: 1rem;
   background: #6aeeb5;
@@ -44,6 +45,30 @@ body {
 
 /*   Navbar Links hover effekt */
 .nav-item a:hover {
+  color: #fff;
+}
+
+/*  Fikser så der ikke er nogle style på Login knappen */
+.nav-item-2 {
+  list-style: none;
+}
+
+/*   Navbar Login knap design */
+.nav-item-2 a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2rem;
+  font-size: 1rem;
+  background: #F83292;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/*   Navbar Login hover effekt */
+.nav-item-2 a:hover {
   color: #fff;
 }
 

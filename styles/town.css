@@ -3,12 +3,33 @@
     --canvas-width: 1200px;
 }
 
-*{
+ /* *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+} 
+
+/*   Title skrift */
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
 }
 
+/*   Title skrift */
+.title .content h3{
+    font-size: 3.3rem;
+    color:#333;
+}
+
+/*   Title Span skrift */
+.title .content h3 span{
+    color:#F83292;
+}
+
+/*   Canvas'et som roboten og byen skal være på (makes canvas responsive) */
 main {
     grid-row: 2;
     grid-column: 2;

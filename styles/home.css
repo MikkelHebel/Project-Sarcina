@@ -20,7 +20,7 @@
     color:#F83292;
 }
 
-/*   Features box center fix */
+/*   Features box center fix (makes boxes responsive) */
 .features .box-container{
     display: flex;
     align-items: center;
@@ -37,7 +37,6 @@
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     margin:1.5rem;
     padding:3rem 2rem;
-    border-radius: .5rem;
     text-align: center;
 }
 
