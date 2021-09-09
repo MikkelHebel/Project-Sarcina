@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- META -->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="styles/town.css" />
-        <link rel="stylesheet" href="styles/navbar.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+<head>
+	<!-- META -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <!-- Javascript -->
-        <script src="scripts/data.js" defer></script>
-        <script src="scripts/visual.js" defer></script>
-        <script src="scripts/town.js" defer></script>
-        <script src="scripts/main.js" defer></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="styles/town.css" />
+  <link rel="stylesheet" href="styles/navbar.css" />
+  <link rel="stylesheet" href="styles/contact.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
 
-        <title>Project Sarcina</title>
 
-    </head>
-    <body>
+	<!-- Javascript -->
+
+	<title>Project Sarcina</title>
+
+</head>
+ <body>
+   <body>
       <!-- Navbar -->
       <section>
   <nav>
@@ -41,28 +41,24 @@
       <li class="nav-item">
         <a href="contact.html">Contact</a>
       </li>
-      <li class="nav-item-2">
+            <li class="nav-item-2">
         <a href="login.html">Login</a>
       </li>
     </ul>
   </nav>
   </section>
 
-<!-- Title -->
-<section class="title" id="title">
-    <div class="content">
-        <h3>Project <span>Showcase </span></h3>
-    </div>
-</section>
+<!-- Contact form -->
+		<div class="contact">
+			<h4>Contact form</h4>
+      <input type="firstname" placeholder="First Name" />
+      <input type="lastname" placeholder="Last Name" />
+      <input type="email" placeholder="Email" />
+      <textarea id="subject" name="subject" placeholder="Subject" style="height:200px"></textarea>
+      <li class="item-contact">
+          <a href="##">Submit</a>
+      </li>
+		</div>
+		
 
-  <!-- Main robot map -->
-  <br>
-        <main>
-          <div class="canvas">
-            <canvas id="town" width="1200px" height="700px"> </canvas>
-            <p id="msgBox"></p>
-          </div>
-        </main>
-  <br>
-    </body>
-</html>
+  </body>
