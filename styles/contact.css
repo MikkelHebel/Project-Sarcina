@@ -1,3 +1,4 @@
+/*   Design boksen omkring contact form */
 .contact {
 	background-color: #FFFFFF;
 	display: flex;
@@ -10,20 +11,33 @@
   padding: 1rem 0;
   border-radius: 0.2rem;
   position: relative;
-  top: 200px;
+  top: 50px;
+  bottom: 50px;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
+/*   Design name, email input */
 input {
 	background-color: #eee;
 	border: none;
 	padding: 12px 15px;
 	margin: 8px 0;
-	width: 100%;
+	width: 75%;
   height: 30%;
 }
+
+/*   Design textarea */
+textarea {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 75%;
+  height: 30%;
+}
+
 
 /*  Contact button */
 .item-contact a {
@@ -36,6 +50,8 @@ input {
 	padding: 12px 45px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .item-contact {

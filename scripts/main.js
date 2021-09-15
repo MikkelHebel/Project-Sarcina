@@ -3,4 +3,3 @@ const ctx = document.querySelector("#town").getContext("2d");
 
 drawLocations();
 drawRoads();
-build_connections();

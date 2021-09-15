@@ -32,7 +32,7 @@ const roads = {
     "FS": {x1: 120, y1: 160, x2: 500, y2: 150},
 };
 
-const connections = [
+const roadConnections = [
     ["A","B"],
     ["A","C"],
     ["A","P"],
