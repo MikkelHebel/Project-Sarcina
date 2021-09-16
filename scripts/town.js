@@ -18,6 +18,10 @@ function build_connections() {
   return conn;
 }
 
+const connections = build_connections();
+console.log(connections.A);
+// Output: Array(3) [ "B", "C", "P" ]
+
 // State object template for the town
 const state = {
     init(robot_loc, packages) {
@@ -25,13 +29,45 @@ const state = {
         this.packages = packages;
     },
 
-    move(to) {}
+    move(to) {
+      if (!connections[this.robot_loc].includes(to)) {
+        return this;
+      } else {
+        let packages = this.packages.roadConnections(p => {
+          if (p.robot_loc != this.robot_loc) return p;
+          return {current: to, address: p.to};
+        }).filter(p => p.robot_loc != p.to);
+        return new state(to, packages);
+      }
+    }
 };
 
 let test = Object.create(state);
-    ltest.init("A", [{ current: "A", destination: "B" }, { current: "A",destination: "C" }]);
-    let travel = ["B", "A", "C", "P"];
-    for (let to of travel) {    
-      test = test.move(to);
-      console.log(test);
+test.init("A", [{ current: "A", destination: "B" }, { current: "A",destination: "C" }]);
+let travel = ["B", "A", "C", "P"];
+for (let to of travel) {    
+  test = test.move(to);
+  console.log(test);
+}
+
+function runRobot(state, robot, memory) {
+  for (let turn = 0;; turn++) {
+    if (state.packages.length == 0) {
+      console.log(`Done in ${turn} turns`);
+      break;
     }
+    let action = robot(state, memory);
+    state = state.move(action.direction);
+    memory = action.memory;
+    console.log(`Moved to ${action.direction}`);
+  }
+}
+
+function randomPick(array) {
+  let choice = Math.floor(Math.random() * array.length);
+  return array[choice];
+}
+
+function randomRobot(state) {
+  return {direction: randomPick(connections[state.place])};
+}

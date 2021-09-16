@@ -11,8 +11,6 @@ function drawLocations() {
   }
 }
 
-
-
 function drawRoads() {
   for (let k in roads) {
     let x1 = roads[k].x1;
@@ -26,4 +24,13 @@ function drawRoads() {
     ctx.lineTo(roads[k].x2, roads[k].y2);
     ctx.stroke();
   }
+}
+
+function drawRobot() {
+  ctx.beginPath();
+  let x = 900;
+  let y = 150;
+  ctx.arc(x, y, 3.5, 0, 6.3);
+  ctx.fillStyle = "red";
+  ctx.fill();
 }
