@@ -34,13 +34,8 @@ const state = {
         return this;
       } else {
         let packages = this.packages.roadConnections(p => {
-          for (let k in packages) {
-            if (p.robot_loc != this.robot_loc) return p;
-            return {current: to, destination: p.to};
-            for (old_packages) {
-              newpackages.push(old_packages[i])
-            }
-          }
+          if (p.robot_loc != this.robot_loc) return p;
+          return {current: to, destination: p.to};
         }).filter(p => p.robot_loc != p.to);
         return new state(to, packages);
       }
