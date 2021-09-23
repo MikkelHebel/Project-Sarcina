@@ -10,3 +10,14 @@ To run the project we used [Replit](http://replit.com) it's a free software host
 
 ## Tech Stack
 For the frontend we used HTML and CSS. and JavaScript for the backend.
+<div align="center">
+  <a href="https://github.com/MikkelHebel?tab=repositories&q=&type=&language=html&sort=">
+    <img align="center" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/html-5.svg" width="55" />
+  </a>
+  <a href="https://github.com/MikkelHebel?tab=repositories&q=&type=&language=css&sort=">
+    <img align="center" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/css-3.svg" width="55" />
+  </a>
+  <a href="https://github.com/MikkelHebel?tab=repositories&q=&type=&language=javascript&sort=">
+    <img align="center" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/javascript.svg" width="55" />
+  </a>
+</div>
