@@ -6,7 +6,7 @@ The main goal of the school project was to learn JavaScript though we still lear
 You can also fork this project and learn from it!
 
 ## Setup
-To run the project we used [Replit](http://replit.com) it's a free software hosting site where you can collaborate on projects with your friends! Alternatively you can download the code and run it locally on your own computer.
+To run the project we used [Replit](http://replit.com) it's a free software hosting site where you can collaborate on projects with your friends or colleges! Alternatively you can download the code and run it locally on your own computer or purchase / rent a web server to host it on.
 
 ## Tech Stack
 For the frontend we used HTML and CSS. and JavaScript for the backend.
